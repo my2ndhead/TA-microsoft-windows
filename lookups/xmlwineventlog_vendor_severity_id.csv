@@ -1,0 +1,6 @@
+vendor_severity_id, vendor_severity
+1, critical
+2, error
+3, warning
+4, informational
+5, verbose

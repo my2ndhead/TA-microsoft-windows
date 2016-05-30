@@ -1,0 +1,15 @@
+event_id,src,logon_type,logon_type_description,app
+4648,,,,win:remote 
+,127.0.0.1,,,win:local
+,::1,,,win:local
+,,0,"System",win:unknown
+,,2,"Interactive",win:local
+,,3,"Network",win:remote
+,,4,"Batch",win:local
+,,5,"Service",win:local
+,,6,"Proxy",win:local
+,,7,"Unlock",win:local
+,,8,"NetworkCleartext",win:remote
+,,9,"NewCredentials",win:local
+,,10,"RemoteInteractive",win:remote
+,,11,"CachedInteractive",win:local
