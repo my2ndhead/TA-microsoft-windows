@@ -2,12 +2,17 @@ Author: my2ndhead
 
 Source type(s):  wineventlog:security, wineventlog:application, wineventlog:system
                  xmlwineventlog:security, xmlwineventlog:application, xmlwineventlog:system
+                 Perfmon:CPU, Perfmon:CPUTime, Perfmon:System, Perfmon:FreeDiskSpace, Perfmon:LogicalDisk, Perfmon:LocalNetwork, Perfmon:Process, Perfmon:Memory, Perfmon:Network
+                 WinHostMon
 
 Supported product(s): 
-* Windows XML event logs (provided by Splunk)
+* Windows event logs
+* Windows XML event logs
+* Windows Perfmon
+* Windows WinHostMon
 
 Supported CIM Version: >=4.4.0
-Supported CIM Data Models: Authentication, Change Analysis
+Supported CIM Data Models: Authentication, Change Analysis, Inventory, Performance
 
 Microsoft KB Documents used for lookups
  * Description of security events in Windows 7 and in Windows Server 2008 R2: https://support.microsoft.com/en-us/kb/977519
