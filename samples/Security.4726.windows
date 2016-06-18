@@ -1,0 +1,26 @@
+03/07/2012 07:13:16 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4726
+EventType=0
+Type=Information
+ComputerName=SOLN-W2008R2-6
+TaskCategory=User Account Management
+OpCode=Info
+RecordNumber=17758522
+Keywords=Audit Success
+Message=A user account was deleted.
+
+Subject:
+	Security ID:		SPLUNK\splunker_admin
+	Account Name:		splunker_admin
+	Account Domain:		SPLUNK
+	Logon ID:		0x55e4059d
+
+Target Account:
+	Security ID:		S-1-5-21-807344451-4160805990-1156053029-3440
+	Account Name:		splunkertest
+	Account Domain:		SPLUNK
+
+Additional Information:
+	Privileges	-

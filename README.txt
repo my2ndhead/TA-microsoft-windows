@@ -4,12 +4,16 @@ Source type(s):  wineventlog:security, wineventlog:application, wineventlog:syst
                  xmlwineventlog:security, xmlwineventlog:application, xmlwineventlog:system
                  Perfmon:CPU, Perfmon:CPUTime, Perfmon:System, Perfmon:FreeDiskSpace, Perfmon:LogicalDisk, Perfmon:LocalNetwork, Perfmon:Process, Perfmon:Memory, Perfmon:Network
                  WinHostMon
+                 DhcpServerLog
+                 WinRegistry
 
 Supported product(s): 
 * Windows event logs
 * Windows XML event logs
 * Windows Perfmon
 * Windows WinHostMon
+* Windows WinRegistry
+* Windows DhcpSrvLog
 
 Supported CIM Version: >=4.4.0
 Supported CIM Data Models: Authentication, Change Analysis, Inventory, Performance
@@ -19,7 +23,12 @@ Microsoft KB Documents used for lookups
  * Where can I find the full list of Failure Reasons for event 4625? http://answers.microsoft.com/en-us/windows/forum/windows_vista-security/where-can-i-find-the-full-list-of-failure-reasons/d0269426-2183-4d99-8af0-cc009dee6658
  * LogLevel Enumeration: https://msdn.microsoft.com/en-us/library/microsoft.windowsazure.diagnostics.loglevel.aspx
 
-Note: App does not include following bin scripts, due to copyright reasons
+
+Note 1: App is not compatible with Splunk App for Windows Infrastructure due to different eventtype naming
+-------
+
+Note 2: App does not include following bin scripts, due to copyright reasons
+-------
   * bin/win_installed_apps.bat
   * bin/win_listening_ports.bat
   * bin/win_timesync_status.bat

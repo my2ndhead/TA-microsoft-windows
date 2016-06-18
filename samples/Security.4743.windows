@@ -1,0 +1,26 @@
+03/07/2012 10:14:25 AM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4743
+EventType=0
+Type=Information
+ComputerName=devlan.local
+TaskCategory=Computer Account Management
+OpCode=Info
+RecordNumber=5999972
+Keywords=Audit Success
+Message=A computer account was deleted.
+
+Subject:
+	Security ID:		SPLUNK\splunk_admin
+	Account Name:		splunk_admin
+	Account Domain:		SPLUNK
+	Logon ID:		0x7702f1fc
+
+Target Computer:
+	Security ID:		S-1-5-21-807344451-4160805990-1156053029-2593
+	Account Name:		splunktest
+	Account Domain:		SPLUNK
+
+Additional Information:
+	Privileges:		-

@@ -1,0 +1,6 @@
+vendor_status,status
+"Installation Ready",available
+"Installation Successful",installed
+"Restart Required","restart required"
+"Installation successful and restart required","restart required"
+"Installation Failure",failure

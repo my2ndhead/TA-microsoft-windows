@@ -1,0 +1,8 @@
+Type=Processor
+Name="Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz"
+Manufacturer="GenuineIntel"
+Architecture="x64"
+ClockSpeedMHz=2079
+NumberOfCores=2
+NumberOfProcessors=4
+Processor Id="BFEBFBFF00040651"
