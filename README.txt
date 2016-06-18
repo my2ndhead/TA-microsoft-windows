@@ -18,3 +18,10 @@ Microsoft KB Documents used for lookups
  * Description of security events in Windows 7 and in Windows Server 2008 R2: https://support.microsoft.com/en-us/kb/977519
  * Where can I find the full list of Failure Reasons for event 4625? http://answers.microsoft.com/en-us/windows/forum/windows_vista-security/where-can-i-find-the-full-list-of-failure-reasons/d0269426-2183-4d99-8af0-cc009dee6658
  * LogLevel Enumeration: https://msdn.microsoft.com/en-us/library/microsoft.windowsazure.diagnostics.loglevel.aspx
+
+Note: App does not include following bin scripts, due to copyright reasons
+  * bin/win_installed_apps.bat
+  * bin/win_listening_ports.bat
+  * bin/win_timesync_status.bat
+  * bin/win_timesync_configuration.bat
+
