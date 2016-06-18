@@ -1,6 +1,7 @@
 Author: my2ndhead
 
-Source type(s): xmlwineventlog:security, xmlwineventlog:application, xmlwineventlog:system
+Source type(s):  wineventlog:security, wineventlog:application, wineventlog:system
+                 xmlwineventlog:security, xmlwineventlog:application, xmlwineventlog:system
 
 Supported product(s): 
 * Windows XML event logs (provided by Splunk)
