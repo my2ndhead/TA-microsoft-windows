@@ -1,3 +1,5 @@
 sourcetype,vendor,product
+WinEventLog:Security,Microsoft,Windows
+WinEventLog:System,Microsoft,Windows
 XmlWinEventLog:Security,Microsoft,Windows
 XmlWinEventLog:System,Microsoft,Windows
