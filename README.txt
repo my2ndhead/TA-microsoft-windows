@@ -4,7 +4,7 @@ Source type(s):  wineventlog:security, wineventlog:application, wineventlog:syst
                  xmlwineventlog:security, xmlwineventlog:application, xmlwineventlog:system
                  Perfmon:CPU, Perfmon:CPUTime, Perfmon:System, Perfmon:FreeDiskSpace, Perfmon:LogicalDisk, Perfmon:LocalNetwork, Perfmon:Process, Perfmon:Memory, Perfmon:Network
                  WinHostMon
-                 DhcpServerLog
+                 DhcpSrvLog
                  WinRegistry
 
 Supported product(s): 
