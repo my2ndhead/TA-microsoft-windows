@@ -1,3 +1,4 @@
 object,object_category
 WinRegistry,registry
 fs_notification,filesystem
+Microsoft-Windows-Eventlog,auditlog
