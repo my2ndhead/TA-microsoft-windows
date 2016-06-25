@@ -1,4 +1,5 @@
 signature_id,action,category,subcategory,signature,os
+1102,deleted,Object Access,Log clear,"The audit log was cleared","Windows 7, Windows Server 2008 R2"
 4608,success,System,Security State Change,Windows is starting up.,"Windows Vista, Windows Server 2008"
 4609,unknown,System,Security State Change,Windows is shutting down.,"Windows Vista, Windows Server 2008"
 4610,unknown,System,Security System Extension,An authentication package has been loaded by the Local Security Authority.,"Windows Vista, Windows Server 2008"

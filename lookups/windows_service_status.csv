@@ -1,0 +1,7 @@
+Status, State, status
+OK, Running, started
+OK, Stopped, stopped
+OK, Paused, stopped
+OK, Start Pending, started
+Degraded, Stop Pending, stopped
+Degraded, Running, warning
