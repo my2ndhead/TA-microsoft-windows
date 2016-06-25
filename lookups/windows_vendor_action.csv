@@ -1,0 +1,5 @@
+sourcetype,vendor_action,action
+WinRegistry,CreateKey,created
+WinRegistry,SetValue,modified
+WinRegistry,DeleteKey,deleted
+WinRegistry,RenameKey,modified
