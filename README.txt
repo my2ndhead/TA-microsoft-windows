@@ -1,11 +1,11 @@
-Author: my2ndhead
-
+Author: my2ndhead 
 Source type(s):  wineventlog:security, wineventlog:application, wineventlog:system
                  xmlwineventlog:security, xmlwineventlog:application, xmlwineventlog:system
                  Perfmon:CPU, Perfmon:CPUTime, Perfmon:System, Perfmon:FreeDiskSpace, Perfmon:LogicalDisk, Perfmon:LocalNetwork, Perfmon:Process, Perfmon:Memory, Perfmon:Network
                  WinHostMon
                  DhcpSrvLog
                  WinRegistry
+                 Script:InstalledApps,Script:ListeningPorts,Script:TimesyncConfiguration,Script:TimesyncStatus
 
 Supported product(s): 
 * Windows event logs
@@ -14,11 +14,18 @@ Supported product(s):
 * Windows WinHostMon
 * Windows WinRegistry
 * Windows DhcpSrvLog
+* Windows Script:InstalledApps
+* Windows Script:ListeningPorts
+* Windows Script:TimeSyncConfiguration
+* Windwos Script:TimeSyncStatus
 
 Supported CIM Version: >=4.4.0
 Supported CIM Data Models: Authentication, Change Analysis, Inventory, Performance
 
 Eventgen Samples included: Yes
+
+Add-on contains: Search and Parsing-Time configuration
+
 
 Microsoft KB Documents used for lookups
  * Description of security events in Windows 7 and in Windows Server 2008 R2: https://support.microsoft.com/en-us/kb/977519
@@ -28,7 +35,7 @@ Microsoft KB Documents used for lookups
 
 Note 1: App is not compatible with Splunk App for Windows Infrastructure due to different eventtype naming
 
-Note 2: App does not include following bin scripts, due to copyright reasons
+Note 2: App does not include following bin scripts, due to copyright reasons. Run Splunk_TA_windows on Forwarders instead.
   * bin/win_installed_apps.bat
   * bin/win_listening_ports.bat
   * bin/win_timesync_status.bat
