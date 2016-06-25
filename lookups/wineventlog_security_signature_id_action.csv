@@ -129,7 +129,7 @@ signature_id,action,category,subcategory,signature,os
 4778,success,Logon/Logoff,Other Logon/Logoff Events,A session was reconnected to a Window Station.,"Windows Vista, Windows Server 2008"
 4779,success,Logon/Logoff,Other Logon/Logoff Events,A session was disconnected from a Window Station.,"Windows Vista, Windows Server 2008"
 4780,success,Account Management,User Account Management,The ACL was set on accounts which are members of administrators groups.,"Windows Vista, Windows Server 2008"
-4781,unknown,Account Management,User Account Management,The name of an account was changed:,"Windows Vista, Windows Server 2008"
+4781,modified,Account Management,User Account Management,The name of an account was changed:,"Windows Vista, Windows Server 2008"
 4782,unknown,Account Management,Other Account Management Events,The password hash an account was accessed.,"Windows Vista, Windows Server 2008"
 4783,unknown,Account Management,Application Group Management,A basic application group was created.,"Windows Vista, Windows Server 2008"
 4784,unknown,Account Management,Application Group Management,A basic application group was changed.,"Windows Vista, Windows Server 2008"
