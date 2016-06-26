@@ -69,17 +69,17 @@ unknown,"Policy Change","Windows Vista, Windows Server 2008","May contain any on
 unknown,"Policy Change","Windows Vista, Windows Server 2008","IPsec Services encountered a potentially serious failure.",4712,"Filtering Platform Policy Change",,,
 unknown,"Policy Change","Windows Vista, Windows Server 2008","Kerberos policy was changed.",4713,"Authentication Policy Change",,,
 unknown,"Policy Change","Windows Vista, Windows Server 2008","Encrypted data recovery policy was changed.",4714,"Authorization Policy Change",,,
-unknown,"Policy Change","Windows Vista, Windows Server 2008","The audit policy (SACL) on an object was changed.",4715,"Audit Policy Change",,,
+acl_modified,"Policy Change","Windows Vista, Windows Server 2008","The audit policy (SACL) on an object was changed.",4715,"Audit Policy Change",success,"Audit Policy",policy
 unknown,"Policy Change","Windows Vista, Windows Server 2008","Trusted domain information was modified.",4716,"Authentication Policy Change",,,
 success,"Policy Change","Windows Vista, Windows Server 2008","System security access was granted to an account.",4717,"Authentication Policy Change",,,
 unknown,"Policy Change","Windows Vista, Windows Server 2008","System security access was removed from an account.",4718,"Authentication Policy Change",,,
-unknown,"Policy Change","Windows Vista, Windows Server 2008","System audit policy was changed.",4719,"Audit Policy Change",,,
-created,"Account Management","Windows Vista, Windows Server 2008","A user account was created.",4720,"User Account Management",,,user
-modified,"Account Management","Windows Vista, Windows Server 2008","A user account was enabled.",4722,"User Account Management",,,user
-modified,"Account Management","Windows Vista, Windows Server 2008","An attempt was made to change an account's password.",4723,"User Account Management",,,user
-modified,"Account Management","Windows Vista, Windows Server 2008","An attempt was made to reset an account's password.",4724,"User Account Management",,,user
-modified,"Account Management","Windows Vista, Windows Server 2008","A user account was disabled.",4725,"User Account Management",,,user
-deleted,"Account Management","Windows Vista, Windows Server 2008","A user account was deleted.",4726,"User Account Management",,,user
+acl_modified,"Policy Change","Windows Vista, Windows Server 2008","System audit policy was changed.",4719,"Audit Policy Change",success,"Audit Policy",policy
+created,"Account Management","Windows Vista, Windows Server 2008","A user account was created.",4720,"User Account Management",success,"Account Management",user
+modified,"Account Management","Windows Vista, Windows Server 2008","A user account was enabled.",4722,"User Account Management",success,"Account Management",user
+modified,"Account Management","Windows Vista, Windows Server 2008","An attempt was made to change an account's password.",4723,"User Account Management",success,"Account Management",user
+modified,"Account Management","Windows Vista, Windows Server 2008","An attempt was made to reset an account's password.",4724,"User Account Management",success,"Account Management",user
+modified,"Account Management","Windows Vista, Windows Server 2008","A user account was disabled.",4725,"User Account Management",success,"Account Management",user
+deleted,"Account Management","Windows Vista, Windows Server 2008","A user account was deleted.",4726,"User Account Management",,"Account Management",user
 success,"Account Management","Windows Vista, Windows Server 2008","A security-enabled global group was created.",4727,"Security Group Management",,,
 success,"Account Management","Windows Vista, Windows Server 2008","A member was added to a security-enabled global group.",4728,"Security Group Management",,,
 success,"Account Management","Windows Vista, Windows Server 2008","A member was removed from a security-enabled global group.",4729,"Security Group Management",,,
@@ -90,11 +90,11 @@ success,"Account Management","Windows Vista, Windows Server 2008","A member was 
 unknown,"Account Management","Windows Vista, Windows Server 2008","A security-enabled local group was deleted.",4734,"Security Group Management",,,
 success,"Account Management","Windows Vista, Windows Server 2008","A security-enabled local group was changed.",4735,"Security Group Management",,,
 success,"Account Management","Windows Vista, Windows Server 2008","A security-enabled global group was changed.",4737,"Security Group Management",,,
-modified,"Account Management","Windows Vista, Windows Server 2008","A user account was changed.",4738,"User Account Management",success,"User Account Management",user
+modified,"Account Management","Windows Vista, Windows Server 2008","A user account was changed.",4738,"User Account Management",success,"Account Management",user
 unknown,"Policy Change","Windows Vista, Windows Server 2008","Domain Policy was changed.",4739,"Authentication Policy Change",,,
-unknown,"Account Management","Windows Vista, Windows Server 2008","A user account was locked out.",4740,"User Account Management",,,
-modified,"Account Management","Windows Vista, Windows Server 2008","A computer account was changed.",4742,"Computer Account Management",,,
-unknown,"Account Management","Windows Vista, Windows Server 2008","A computer account was deleted.",4743,"Computer Account Management",,,
+modified,"Account Management","Windows Vista, Windows Server 2008","A user account was locked out.",4740,"User Account Management",success,"Account Management",user
+modified,"Account Management","Windows Vista, Windows Server 2008","A computer account was changed.",4742,"Computer Account Management",success,"Account Management",computer
+deleted,"Account Management","Windows Vista, Windows Server 2008","A computer account was deleted.",4743,"Computer Account Management",success,"Account Management",computer
 unknown,"Account Management","Windows Vista, Windows Server 2008","A security-disabled local group was created.",4744,"Distribution Group Management",,,
 unknown,"Account Management","Windows Vista, Windows Server 2008","A security-disabled local group was changed.",4745,"Distribution Group Management",,,
 unknown,"Account Management","Windows Vista, Windows Server 2008","A member was added to a security-disabled local group.",4746,"Distribution Group Management",,,
@@ -115,9 +115,9 @@ unknown,"Account Management","Windows Vista, Windows Server 2008","A security-di
 unknown,"Account Management","Windows Vista, Windows Server 2008","A member was added to a security-disabled universal group.",4761,"Distribution Group Management",,,
 unknown,"Account Management","Windows Vista, Windows Server 2008","A member was removed from a security-disabled universal group.",4762,"Distribution Group Management",,,
 unknown,"Account Management","Windows Vista, Windows Server 2008","A group�s type was changed.",4764,"Security Group Management",,,
-unknown,"Account Management","Windows Vista, Windows Server 2008","SID History was added to an account.",4765,"User Account Management",,,
-unknown,"Account Management","Windows Vista, Windows Server 2008","An attempt to add SID History to an account failed.",4766,"User Account Management",,,
-modified,"Account Management","Windows Vista, Windows Server 2008","A user account was unlocked.",4767,"User Account Management",,,user
+created,"Account Management","Windows Vista, Windows Server 2008","SID History was added to an account.",4765,"User Account Management",success,"Account Management",sid
+created,"Account Management","Windows Vista, Windows Server 2008","An attempt to add SID History to an account failed.",4766,"User Account Management",failure,"Account Management",sid
+modified,"Account Management","Windows Vista, Windows Server 2008","A user account was unlocked.",4767,"User Account Management",success,"Account Management",user
 failure,"Account Logon","Windows Vista, Windows Server 2008","A Kerberos authentication ticket (TGT) was requested.",4768,"Kerberos Authentication Service",,,
 failure,"Account Logon","Windows Vista, Windows Server 2008","A Kerberos service ticket was requested.",4769,"Kerberos Service Ticket Operations",,,
 success,"Account Logon","Windows Vista, Windows Server 2008","A Kerberos service ticket was renewed.",4770,"Kerberos Service Ticket Operations",,,
@@ -129,8 +129,8 @@ failure,"Account Logon","Windows Vista, Windows Server 2008","The domain control
 unknown,"Account Logon","Windows Vista, Windows Server 2008","The domain controller failed to validate the credentials for an account.",4777,"Credential Validation",,,
 success,"Logon/Logoff","Windows Vista, Windows Server 2008","A session was reconnected to a Window Station.",4778,"Other Logon/Logoff Events",,,
 success,"Logon/Logoff","Windows Vista, Windows Server 2008","A session was disconnected from a Window Station.",4779,"Other Logon/Logoff Events",,,
-success,"Account Management","Windows Vista, Windows Server 2008","The ACL was set on accounts which are members of administrators groups.",4780,"User Account Management",,,
-modified,"Account Management","Windows Vista, Windows Server 2008","The name of an account was changed:",4781,"User Account Management",,,user
+acl_modified,"Account Management","Windows Vista, Windows Server 2008","The ACL was set on accounts which are members of administrators groups.",4780,"User Account Management",success,"Account Management",group
+modified,"Account Management","Windows Vista, Windows Server 2008","The name of an account was changed:",4781,"User Account Management",success,"Account Management",user
 unknown,"Account Management","Windows Vista, Windows Server 2008","The password hash an account was accessed.",4782,"Other Account Management Events",,,
 unknown,"Account Management","Windows Vista, Windows Server 2008","A basic application group was created.",4783,"Application Group Management",,,
 unknown,"Account Management","Windows Vista, Windows Server 2008","A basic application group was changed.",4784,"Application Group Management",,,
@@ -141,7 +141,7 @@ unknown,"Account Management","Windows Vista, Windows Server 2008","A non-member 
 unknown,"Account Management","Windows Vista, Windows Server 2008","A basic application group was deleted.",4789,"Application Group Management",,,
 unknown,"Account Management","Windows Vista, Windows Server 2008","An LDAP query group was created.",4790,"Application Group Management",,,
 unknown,"Account Management","Windows Vista, Windows Server 2008","The Password Policy Checking API was called.",4793,"Other Account Management Events",,,
-unknown,"Account Management","Windows Vista, Windows Server 2008","An attempt was made to set the Directory Services Restore Mode.",4794,"User Account Management",,,
+modified,"Account Management","Windows Vista, Windows Server 2008","An attempt was made to set the Directory Services Restore Mode.",4794,"User Account Management",success,"Account Management",user
 success,"Logon/Logoff","Windows Vista, Windows Server 2008","The workstation was locked.",4800,"Other Logon/Logoff Events",,,
 unknown,"Logon/Logoff","Windows Vista, Windows Server 2008","The workstation was unlocked.",4801,"Other Logon/Logoff Events",,,
 unknown,"Logon/Logoff","Windows Vista, Windows Server 2008","The screen saver was invoked.",4802,"Other Logon/Logoff Events",,,
@@ -194,7 +194,7 @@ unknown,"Policy Change","Windows Vista, Windows Server 2008","Special Groups Log
 unknown,"Policy Change","Windows Vista, Windows Server 2008","The local policy settings for the TBS were changed.",4909,"Other Policy Change Events",,,
 unknown,"Policy Change","Windows Vista, Windows Server 2008","The group policy settings for the TBS were changed.",4910,"Other Policy Change Events",,,
 unknown,"Policy Change","Windows 8, Windows Server 2012","Resource attributes of the object were changed.",4911,"Authorization Policy Change",,,
-unknown,"Policy Change","Windows Vista, Windows Server 2008","Per User Audit Policy was changed.",4912,"Audit Policy Change",,,
+modified,"Policy Change","Windows Vista, Windows Server 2008","Per User Audit Policy was changed.",4912,"Audit Policy Change",success,"Policy Change",policy
 unknown,"Policy Change","Windows 8, Windows Server 2012","Central Access Policy on the object was changed.",4913,"Authorization Policy Change",,,
 unknown,"DS Access","Windows Vista, Windows Server 2008","An Active Directory replica source naming context was established.",4928,"Detailed Directory Service Replication",,,
 unknown,"DS Access","Windows Vista, Windows Server 2008","An Active Directory replica source naming context was removed.",4929,"Detailed Directory Service Replication",,,
@@ -208,9 +208,9 @@ unknown,"DS Access","Windows Vista, Windows Server 2008","Replication failure en
 unknown,"DS Access","Windows Vista, Windows Server 2008","A lingering object was removed from a replica.",4937,"Detailed Directory Service Replication",,,
 success,"Policy Change","Windows Vista, Windows Server 2008","The following policy was active when the Windows Firewall started.",4944,"MPSSVC Rule-Level Policy Change",,,
 success,"Policy Change","Windows Vista, Windows Server 2008","A rule was listed when the Windows Firewall started.",4945,"MPSSVC Rule-Level Policy Change",,,
-created,"Policy Change","Windows Vista, Windows Server 2008","A change has been made to Windows Firewall exception list. A rule was added.",4946,"MPSSVC Rule-Level Policy Change",success,Windows Firewall Policy,rule
-modified,"Policy Change","Windows Vista, Windows Server 2008","A change has been made to Windows Firewall exception list. A rule was modified.",4947,"MPSSVC Rule-Level Policy Change",success,Windows Firewall Policy,rule
-deleted,"Policy Change","Windows Vista, Windows Server 2008","A change has been made to Windows Firewall exception list. A rule was deleted.",4948,"MPSSVC Rule-Level Policy Change",success,Windows Firwall Policy,rule
+created,"Policy Change","Windows Vista, Windows Server 2008","A change has been made to Windows Firewall exception list. A rule was added.",4946,"MPSSVC Rule-Level Policy Change",success,Windows Firewall,policy
+modified,"Policy Change","Windows Vista, Windows Server 2008","A change has been made to Windows Firewall exception list. A rule was modified.",4947,"MPSSVC Rule-Level Policy Change",success,Windows Firewall,policy
+deleted,"Policy Change","Windows Vista, Windows Server 2008","A change has been made to Windows Firewall exception list. A rule was deleted.",4948,"MPSSVC Rule-Level Policy Change",success,Windows Firewall,policy
 unknown,"Policy Change","Windows Vista, Windows Server 2008","Windows Firewall settings were restored to the default values.",4949,"MPSSVC Rule-Level Policy Change",,,
 unknown,"Policy Change","Windows Vista, Windows Server 2008","A Windows Firewall setting has changed.",4950,"MPSSVC Rule-Level Policy Change",,,
 failure,"Policy Change","Windows Vista, Windows Server 2008","A rule has been ignored because its major version number was not recognized by Windows Firewall.",4951,"MPSSVC Rule-Level Policy Change",,,
@@ -299,8 +299,8 @@ failure,"Object Access","Windows Vista, Windows Server 2008","The Windows Filter
 success,"Object Access","Windows Vista, Windows Server 2008","The Windows Filtering Platform has permitted a bind to a local port.",5158,"Filtering Platform Connection",,,
 unknown,"Object Access","Windows Vista, Windows Server 2008","The Windows Filtering Platform has blocked a bind to a local port.",5159,"Filtering Platform Connection",,,
 unknown,"Object Access","Windows 7, Windows Server 2008 R2","Spn check for SMB/SMB2 failed.",5168,"File Share",,,
-unknown,"Account Management","Windows Vista, Windows Server 2008","Credential Manager credentials were backed up.",5376,"User Account Management",,,
-unknown,"Account Management","Windows Vista, Windows Server 2008","Credential Manager credentials were restored from a backup.",5377,"User Account Management",,,
+read,"Account Management","Windows Vista, Windows Server 2008","Credential Manager credentials were backed up.",5376,"User Account Management",success,"Account Management",user
+modified,"Account Management","Windows Vista, Windows Server 2008","Credential Manager credentials were restored from a backup.",5377,"User Account Management",success,"Account Management",user
 unknown,"Logon/Logoff","Windows Vista, Windows Server 2008","The requested credentials delegation was disallowed by policy.",5378,"Other Logon/Logoff Events",,,
 success,"Policy Change","Windows Vista, Windows Server 2008","The following callout was present when the Windows Filtering Platform Base Filtering Engine started.",5440,"Filtering Platform Policy Change",,,
 success,"Policy Change","Windows Vista, Windows Server 2008","The following filter was present when the Windows Filtering Platform Base Filtering Engine started.",5441,"Filtering Platform Policy Change",,,
