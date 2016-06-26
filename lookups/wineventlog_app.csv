@@ -1,5 +1,7 @@
 event_id,src,logon_type,logon_type_description,app
 4648,,,,win:remote 
+4672,,,,win:local
+4776,,,,win:remote
 ,127.0.0.1,,,win:local
 ,::1,,,win:local
 ,,0,"System",win:unknown

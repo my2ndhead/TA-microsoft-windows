@@ -19,8 +19,9 @@ Supported product(s):
 * Windows Script:TimeSyncConfiguration
 * Windwos Script:TimeSyncStatus
 
+App Version: 0.9
 Supported CIM Version: >=4.4.0
-Supported CIM Data Models: Authentication, Change Analysis, Inventory, Performance
+Supported CIM Data Models: Application State, Authentication, Change Analysis, Inventory, Performance, Update
 
 Eventgen Samples included: Yes
 
@@ -32,13 +33,14 @@ Microsoft KB Documents used for lookups
  * Where can I find the full list of Failure Reasons for event 4625? http://answers.microsoft.com/en-us/windows/forum/windows_vista-security/where-can-i-find-the-full-list-of-failure-reasons/d0269426-2183-4d99-8af0-cc009dee6658
  * LogLevel Enumeration: https://msdn.microsoft.com/en-us/library/microsoft.windowsazure.diagnostics.loglevel.aspx
 
+Note 1: App is a partial replacement of Splunk_TA_windows. Focus is on CIM compatibilty and performance. Test this app first on a separate Search Head before running in production.
 
-Note 1: App is not compatible with Splunk App for Windows Infrastructure due to different eventtype naming
+Note 2: App is not compatible with Splunk App for Windows Infrastructure due to different eventtype naming
 
-Note 2: App does not include following bin scripts, due to copyright reasons. Run Splunk_TA_windows on Forwarders instead.
+Note 3: App does not include following bin scripts, due to copyright reasons. Run Splunk_TA_windows on Forwarders instead.
   * bin/win_installed_apps.bat
   * bin/win_listening_ports.bat
   * bin/win_timesync_status.bat
   * bin/win_timesync_configuration.bat
 
-Todo: Improve CIM Datamodel compatibility
+Todo: Improve CIM Datamodel compatibility (ongoing)
