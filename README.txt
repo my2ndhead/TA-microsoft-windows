@@ -74,5 +74,5 @@ Microsoft KB Documents used for lookups:
 
 Todo: Improve CIM Datamodel compatibility (ongoing)
 
-License: Create Commons Attribution 4.0 International 
+License: Creative Commons Attribution 4.0 International 
          https://creativecommons.org/licenses/by/4.0/
